@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+<title>Registration form</title>
+<style>
+.container{
+	text-align: left;
+	background-color:#C3B1E1;
+	font-family: sans-serif;
+	color: #FF1493;
+	margin: 50px 50px 20px 50px;
+	padding-left: 30px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	border: 2px solid #edf7f6;
+	border-radius: 1%; 
+}
+button{
+  background-color: #edf7f6;
+  padding: 10px 20px;  
+  margin: 5px 0;  
+border: #8458b3; 
+  cursor: pointer;  
+  opacity: 0.8;
+  text-align:center;
+}
+body{
+	background-color:  #8458b3;
+}
+input[type=text],input[type=password],input[type=gmail],input[type=number],textarea{
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0px 10px 0;
+	display: inline-block;
+	background: #edf7f6;
+	opacity: 0.8;
+	 border-left-width: 0px;
+            border-right-width: 0;
+            border-top-width:0 ;
+            outline: 0;
+}
+input[type=text],input[type=password],input[type=gmail],input[type=number],textarea:focus{
+	border: 3px solid #8458b3;
+}
+h1{
+	text-align: center;
+}
+hr{
+	border: 1px solid #edf7f6;
+}
+input[type=radio]{
+	accent-color:#8458b3;
+	border: #8458b3;
+	margin:5px auto 5px;
+}
+	
+</style>
+</head>
+<body >
+	<div class="container">
+		<h1>REGISTRATION FORM</h1>
+		<hr /><br>
+		<form>
+			<label for="First name">First Name:</label>
+			<input type ="text" placeholder="Enter First Name" required><br><br>
+
+			<label for="Middle name">Middle Name:</label>
+			<input type ="text" placeholder="Enter Middle Name" required><br><br>
+
+			<label for="Last name">Last Name:</label>
+			<input type ="text" placeholder="Enter Last Name" required><br><br>
+
+			<label for="Gender">Gender:</label>
+			
+			<input type ="radio" name="Male">  Male  <input type="radio" name="Female">  Female
+			<br><br>
+			<label for="contactno.">Contact number:</label>
+			<input type="number" placeholder="Contact Number" value ="+91" size="10"/ required><br><br>
+
+			
+			<lable for="Current Address:">Current Address:</label>
+			<textarea cols = "80" rows="5" placeholder="current Address" value="Address" required>Current Address</textarea><br><br>
+
+			
+			<label for="email">Email:</label>
+			<input type="text" placeholder="Enter Email" required><br><br>
+	
+			<label for="Password">Password:</label>
+			<input type="password" placeholder="Enter Password" name="Password" required><br><br>
+
+			<label for="RePassword">Re-type Password:</label>
+			<input type="password" placeholder="Re-type Password" name="RePassword" required><br><br>
+
+			
+			<button type="Submit">Register</button><br>
+
+			
+		</form>
+		
+	</div>
+</body>
+</html>
